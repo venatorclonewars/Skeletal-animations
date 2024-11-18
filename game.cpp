@@ -4,6 +4,7 @@
 #include "camera.h"
 #include "texture.h"
 #include "mesh.h"
+#include "meshSkeleton.h"
 #include "lighting_technique.h"
 
 #define WINDOW_WIDTH 1920
@@ -15,6 +16,7 @@ GLuint IBO = -1;
 
 Texture* pTexture = NULL;
 Mesh* pMesh = NULL;
+MeshSkeleton* pMeshSkeleton = NULL;
 LightingTechnique* pLightingTech = NULL;
 BaseLight baseLight;
 DirectionalLight dirLight;
@@ -48,14 +50,21 @@ Game::Game()
     }
 
     pMesh = new Mesh();
+    pMeshSkeleton = new MeshSkeleton();
 
+    pMeshSkeleton->importMesh("Models/Doom/boblampclean.md5mesh");
+
+    //Models/Chess/chess_set_1k.fbx
     if (!pMesh->loadMesh("Models/Vase/antique_ceramic_vase_01_1k.fbx"))
         exit(1);
+
+
     
     pLightingTech = new LightingTechnique();
     if (!pLightingTech->init())
         exit(1);
     
+
     pLightingTech->enable();
 
     pLightingTech->setTextureUnit(COLOR_TEXTURE_UNIT_INDEX_0);
@@ -116,6 +125,8 @@ void Game::renderScene()
     view.inverse();
   
     world = pMesh->getWorldTransform();
+    world.setScale(Vector3f(5.0f, 5.0f, 5.0f));
+
     Matrix4f WVP = projection * view * world;
     pLightingTech->setWVP(WVP);
     pLightingTech->setDirectionalLight(dirLight);

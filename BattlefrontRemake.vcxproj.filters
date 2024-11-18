@@ -36,6 +36,12 @@
     <ClCompile Include="lighting_technique.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="assimp_sandbox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="meshSkeleton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="x64\Debug\freeglutd.dll" />
@@ -45,6 +51,8 @@
     <None Include="spider.fbx" />
     <None Include="spider.mtl" />
     <None Include="Models\Files\untitled.mtl" />
+    <None Include="Models\Doom\boblampclean.md5anim" />
+    <None Include="Models\Doom\boblampclean.md5mesh" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="math.h">
@@ -78,6 +86,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="material.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="meshSkeleton.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -25,8 +25,7 @@ bool Texture::load()
 	
 	if (m_textureTarget == GL_TEXTURE_2D)
 	{
-		//glTexImage2D(m_textureTarget, 0, GL_RGBA, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, imageData);
-
+		
 		switch (bpp)
 		{
 		case 1: glTexImage2D(m_textureTarget, 0, GL_RGB, width, height, 0, GL_RED, GL_UNSIGNED_BYTE, imageData);

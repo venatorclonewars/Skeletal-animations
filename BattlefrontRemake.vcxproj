@@ -133,15 +133,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="assimp_sandbox.cpp" />
     <ClCompile Include="camera.cpp" />
     <ClCompile Include="game.cpp" />
     <ClCompile Include="lighting_technique.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mesh.cpp" />
+    <ClCompile Include="meshSkeleton.cpp" />
     <ClCompile Include="technique.cpp" />
     <ClCompile Include="texture.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Models\Doom\boblampclean.md5anim" />
+    <None Include="Models\Doom\boblampclean.md5mesh" />
     <None Include="Models\Files\untitled.mtl" />
     <None Include="shader.fs" />
     <None Include="shader.vs" />
@@ -157,6 +161,7 @@
     <ClInclude Include="material.h" />
     <ClInclude Include="math.h" />
     <ClInclude Include="mesh.h" />
+    <ClInclude Include="meshSkeleton.h" />
     <ClInclude Include="prerequisites.h" />
     <ClInclude Include="technique.h" />
     <ClInclude Include="stb_image.h" />
