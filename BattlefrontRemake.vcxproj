@@ -139,7 +139,7 @@
     <ClCompile Include="lighting_technique.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mesh.cpp" />
-    <ClCompile Include="meshSkeleton.cpp" />
+    <ClCompile Include="skinnedMesh.cpp" />
     <ClCompile Include="technique.cpp" />
     <ClCompile Include="texture.cpp" />
   </ItemGroup>
@@ -161,7 +161,7 @@
     <ClInclude Include="material.h" />
     <ClInclude Include="math.h" />
     <ClInclude Include="mesh.h" />
-    <ClInclude Include="meshSkeleton.h" />
+    <ClInclude Include="skinnedMesh.h" />
     <ClInclude Include="prerequisites.h" />
     <ClInclude Include="technique.h" />
     <ClInclude Include="stb_image.h" />

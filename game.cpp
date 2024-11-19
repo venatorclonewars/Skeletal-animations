@@ -4,7 +4,7 @@
 #include "camera.h"
 #include "texture.h"
 #include "mesh.h"
-#include "meshSkeleton.h"
+#include "skinnedMesh.h"
 #include "lighting_technique.h"
 
 #define WINDOW_WIDTH 1920
@@ -16,7 +16,7 @@ GLuint IBO = -1;
 
 Texture* pTexture = NULL;
 Mesh* pMesh = NULL;
-MeshSkeleton* pMeshSkeleton = NULL;
+SkinnedMesh* pSkinnedMesh = NULL;
 LightingTechnique* pLightingTech = NULL;
 BaseLight baseLight;
 DirectionalLight dirLight;
@@ -50,9 +50,9 @@ Game::Game()
     }
 
     pMesh = new Mesh();
-    pMeshSkeleton = new MeshSkeleton();
+    pSkinnedMesh = new SkinnedMesh();
 
-    pMeshSkeleton->importMesh("Models/Doom/boblampclean.md5mesh");
+    pSkinnedMesh->loadMesh("Models/Doom/boblampclean.md5mesh");
 
     //Models/Chess/chess_set_1k.fbx
     if (!pMesh->loadMesh("Models/Vase/antique_ceramic_vase_01_1k.fbx"))

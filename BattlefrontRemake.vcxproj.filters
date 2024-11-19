@@ -39,7 +39,7 @@
     <ClCompile Include="assimp_sandbox.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="meshSkeleton.cpp">
+    <ClCompile Include="skinnedMesh.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -88,7 +88,7 @@
     <ClInclude Include="material.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="meshSkeleton.h">
+    <ClInclude Include="skinnedMesh.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
