@@ -1,5 +1,24 @@
 ﻿  meshSkeleton.cpp
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\meshSkeleton.cpp(24,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\meshSkeleton.cpp(47,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\meshSkeleton.cpp(68,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\math.h(262,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'meshSkeleton.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\math.h(276,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'meshSkeleton.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\math.h(378,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'meshSkeleton.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\math.h(379,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'meshSkeleton.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\math.h(380,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'meshSkeleton.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\math.h(381,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'meshSkeleton.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\meshSkeleton.cpp(15,35): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\meshSkeleton.cpp(29,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\meshSkeleton.cpp(43,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\meshSkeleton.cpp(60,20): warning C4018: '<': signed/unsigned mismatch
   BattlefrontRemake.vcxproj -> C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\x64\Debug\BattlefrontRemake.exe
