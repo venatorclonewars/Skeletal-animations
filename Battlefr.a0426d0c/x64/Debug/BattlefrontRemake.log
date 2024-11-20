@@ -1,4 +1,42 @@
-﻿  skinnedMesh.cpp
+﻿  game.cpp
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\math.h(262,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'game.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\math.h(276,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'game.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\math.h(378,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'game.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\math.h(379,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'game.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\math.h(380,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'game.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\math.h(381,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'game.cpp')
+  
+  mesh.cpp
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\math.h(262,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'mesh.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\math.h(276,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'mesh.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\math.h(378,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'mesh.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\math.h(379,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'mesh.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\math.h(380,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'mesh.cpp')
+  
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\math.h(381,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'mesh.cpp')
+  
+  skinnedMesh.cpp
 C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\math.h(262,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'skinnedMesh.cpp')
   
@@ -20,4 +58,7 @@ C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\mat
 C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\skinnedMesh.cpp(12,37): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
 C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\skinnedMesh.cpp(26,20): warning C4018: '<': signed/unsigned mismatch
 C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\skinnedMesh.cpp(40,20): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\math.h(301,1): warning C4172: returning address of local variable or temporary : out
+C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\math.h(441,1): warning C4172: returning address of local variable or temporary : out
   BattlefrontRemake.vcxproj -> C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\x64\Debug\BattlefrontRemake.exe

@@ -328,13 +328,13 @@ void SkinnedMesh::render()
 	{
 		unsigned int materialIndex = m_meshes[i].materialIndex;
 
-		/*assert(materialIndex < m_materials.size());
+		assert(materialIndex < m_materials.size());
 
 		if (m_materials[materialIndex].pDiffuse)
 			m_materials[materialIndex].pDiffuse->bind(COLOR_TEXTURE_UNIT_0);
 
 		if (m_materials[materialIndex].pSpecularExponent)
-			m_materials[materialIndex].pSpecularExponent->bind(SPECULAR_EXPONENT_UNIT_0);*/
+			m_materials[materialIndex].pSpecularExponent->bind(SPECULAR_EXPONENT_UNIT_0);
 
 		glDrawElementsBaseVertex(
 			GL_TRIANGLES,
@@ -352,4 +352,19 @@ void SkinnedMesh::render()
 	glBindVertexArray(0);
 }
 
+const Material& SkinnedMesh::getMaterial()
+{
+	for (unsigned int i = 0; i < m_materials.size(); i++)
+		if (m_materials[i].ambientColor != Vector3f(0.0f, 0.0f, 0.0f))
+		{
+			return m_materials[i];
+		}
 
+	if (m_materials.size() == 0)
+	{
+		printf("No materials\n");
+		exit(0);
+	}
+
+	return m_materials[0];
+}

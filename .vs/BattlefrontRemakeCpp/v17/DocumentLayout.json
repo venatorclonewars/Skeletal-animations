@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\Skeletal-animations\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\Skeletal-animations\\texture.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|solutionrelative:texture.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\Skeletal-animations\\skinnedMesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|solutionrelative:skinnedMesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -11,20 +15,20 @@
       "RelativeMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|solutionrelative:skinnedMesh.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\Skeletal-animations\\mesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|solutionrelative:mesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\Skeletal-animations\\texture.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|solutionrelative:texture.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\Skeletal-animations\\mesh.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|solutionrelative:mesh.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\Skeletal-animations\\game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|solutionrelative:game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\Skeletal-animations\\shader.fs||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|solutionrelative:shader.fs||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\Skeletal-animations\\mesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|solutionrelative:mesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\Skeletal-animations\\prerequisites.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -37,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\Skeletal-animations\\assimp_sandbox.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|solutionrelative:assimp_sandbox.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\Skeletal-animations\\shader.fs||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A0426D0C-527B-4904-919C-E4C6EF35EE86}|BattlefrontRemake.vcxproj|solutionrelative:shader.fs||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,7 +70,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "prerequisites.h",
               "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\Skeletal-animations\\prerequisites.h",
               "RelativeDocumentMoniker": "prerequisites.h",
@@ -78,12 +78,11 @@
               "RelativeToolTip": "prerequisites.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-19T10:12:35.457Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T10:12:35.457Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "assimp_sandbox.cpp",
               "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\Skeletal-animations\\assimp_sandbox.cpp",
               "RelativeDocumentMoniker": "assimp_sandbox.cpp",
@@ -95,97 +94,98 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 5,
               "Title": "shader.fs",
               "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\Skeletal-animations\\shader.fs",
               "RelativeDocumentMoniker": "shader.fs",
               "ToolTip": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\Skeletal-animations\\shader.fs",
               "RelativeToolTip": "shader.fs",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAAAF4AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAAAC8AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-11-18T12:06:50.866Z"
+              "WhenOpened": "2024-11-18T12:06:50.866Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "mesh.cpp",
               "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\Skeletal-animations\\mesh.cpp",
               "RelativeDocumentMoniker": "mesh.cpp",
               "ToolTip": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\Skeletal-animations\\mesh.cpp",
               "RelativeToolTip": "mesh.cpp",
-              "ViewState": "AgIAAIcAAAAAAAAAAAApwIwAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAC4BAAAAAAAAAAApwEIBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-18T11:51:50.335Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "texture.cpp",
               "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\Skeletal-animations\\texture.cpp",
               "RelativeDocumentMoniker": "texture.cpp",
               "ToolTip": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\Skeletal-animations\\texture.cpp",
               "RelativeToolTip": "texture.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-18T11:51:13.128Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "skinnedMesh.cpp",
               "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\Skeletal-animations\\skinnedMesh.cpp",
               "RelativeDocumentMoniker": "skinnedMesh.cpp",
               "ToolTip": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\Skeletal-animations\\skinnedMesh.cpp",
               "RelativeToolTip": "skinnedMesh.cpp",
-              "ViewState": "AgIAAA4AAAAAAAAAAAApwBUAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAF0BAAAAAAAAAAApwFEBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-18T11:26:21.135Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "skinnedMesh.h",
               "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\Skeletal-animations\\skinnedMesh.h",
               "RelativeDocumentMoniker": "skinnedMesh.h",
               "ToolTip": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\Skeletal-animations\\skinnedMesh.h",
               "RelativeToolTip": "skinnedMesh.h",
-              "ViewState": "AgIAACYAAAAAAAAAAAApwCsAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAApwA8AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-11-18T11:25:50.133Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "mesh.h",
               "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\Skeletal-animations\\mesh.h",
               "RelativeDocumentMoniker": "mesh.h",
               "ToolTip": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\Skeletal-animations\\mesh.h",
               "RelativeToolTip": "mesh.h",
-              "ViewState": "AgIAABEAAAAAAAAAAAApwBkAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-11-18T11:16:36.072Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "game.cpp",
               "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\Skeletal-animations\\game.cpp",
               "RelativeDocumentMoniker": "game.cpp",
               "ToolTip": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\Skeletal-animations\\game.cpp",
               "RelativeToolTip": "game.cpp",
-              "ViewState": "AgIAACgAAAAAAAAAAAAkwDIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAAAAAAAApwKsAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-18T11:10:51.315Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Documents\\GitHubLocal\\GameEngine\\Skeletal-animations\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",

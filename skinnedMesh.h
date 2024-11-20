@@ -10,7 +10,7 @@
 
 using namespace std;
 
-#define ASSIMP_LOAD_FLAGS (aiProcess_Triangulate | aiProcess_GenSmoothNormals | aiProcess_JoinIdenticalVertices)
+#define ASSIMP_LOAD_FLAGS (aiProcess_Triangulate | aiProcess_GenSmoothNormals | aiProcess_JoinIdenticalVertices | aiProcess_PreTransformVertices)
 #define MAX_NUM_BONES_PER_VERTEX 4
 
 #define COLOR_TEXTURE_UNIT_INDEX_0 0 
@@ -42,6 +42,7 @@ public:
 	void initMaterials(const aiScene* pScene, const string& filename);
 	void populateBuffers();
 	void render();
+	const Material& getMaterial();
 
 private:
 

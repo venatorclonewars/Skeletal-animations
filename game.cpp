@@ -130,7 +130,10 @@ void Game::renderScene()
     Matrix4f WVP = projection * view * world;
     pLightingTech->setWVP(WVP);
     pLightingTech->setDirectionalLight(dirLight);
-    pLightingTech->setMaterial(pMesh->getMaterial());
+
+   
+
+    //pLightingTech->setMaterial(pMesh->getMaterial());
     dirLight.calcLocalDirection(world);
 
 
@@ -151,7 +154,22 @@ void Game::renderScene()
 
     pLightingTech->setCameraLocalPos(camLocalPos3f);
 
-    pMesh->render();
+    for (int i = 0; i < 2; i++)
+    {
+        if (i == 0)
+        {
+            pLightingTech->setMaterial(pMesh->getMaterial());
+            pMesh->render();
+        }
+            
+        else
+        {
+            pLightingTech->setMaterial(pMesh->getMaterial());
+            pSkinnedMesh->render();
+        }
+        
+    }
+    
     
     glutSwapBuffers();
 
