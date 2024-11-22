@@ -51,6 +51,13 @@ void Camera::onKeyboard(unsigned char key)
     case GLUT_KEY_PAGE_DOWN:
         transformPos -= (cameraTransform.getYDirection() * m_speed);
         break;
+
+    case 32:
+        m_displayBoneIndex++;
+        m_displayBoneIndex = m_displayBoneIndex % m_pSkinnedMesh->getNumBones();
+        m_pLightingTech->setDisplayBoneIndex(m_displayBoneIndex);
+        printf("num bones %d     ", m_displayBoneIndex);
+        break;
     }
 }
 
@@ -62,6 +69,12 @@ void Camera::onMouse(int x, int y)
     rotX = std::clamp(rotX, (float) - PI / 2.0f, (float)PI / 2.0f);
 
     glutWarpPointer(glutGet(GLUT_SCREEN_WIDTH) / 2.0f, glutGet(GLUT_SCREEN_HEIGHT) / 2.0f);
+}
+
+void Camera::setWeightColorDebug(SkinnedMesh* pMesh, LightingTechnique* lightTech)
+{
+    m_pSkinnedMesh = pMesh;
+    m_pLightingTech = lightTech;
 }
 
 Matrix4f Camera::getMatrix()

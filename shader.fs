@@ -8,6 +8,9 @@ in vec2 fragTexCoord;
 in vec3 fragNormal;
 in vec3 fragVertPos;
 
+flat in ivec4 fragBoneIDs;
+in vec4 fragWeights;
+
 struct BaseLight
 {
 	vec3 color;
@@ -51,6 +54,7 @@ uniform Material gMaterial;
 uniform sampler2D gSampler;
 uniform sampler2D gSamplerSpecularExp;
 uniform vec3 gCameraLocalPos;
+uniform int gDisplayBoneIndex;
 
 void main()
 {
@@ -85,11 +89,33 @@ void main()
 		}
 	}
 		
+	bool found = false;
 
+    for (int i = 0 ; i < 4 ; i++) 
+	{
+        if (fragBoneIDs[i] == gDisplayBoneIndex) 
+		{
+           if (fragWeights[i] >= 0.7) 
+		   {
+               FragColor = vec4(1.0, 0.0, 0.0, 0.0) * fragWeights[i];
+           } 
+		   else if (fragWeights[i] >= 0.4 && fragWeights[i] <= 0.6) 
+		   {
+               FragColor = vec4(0.0, 1.0, 0.0, 0.0) * fragWeights[i];
+           } 
+		   else if (fragWeights[i] >= 0.1) 
+		   {
+               FragColor = vec4(1.0, 1.0, 0.0, 0.0) * fragWeights[i];
+           }
+
+           found = true;
+           break;
+        }
+    }
 
 	
-		
+	if (!found)	
 	FragColor = texture(gSampler, fragTexCoord.xy) *
-						clamp((ambientColor + diffuseColor + specularColor), 0, 1);
+						clamp((ambientColor + diffuseColor + specularColor), 0, 1)  + vec4(0.0, 0.0, 1.0, 0.0);
 
 }

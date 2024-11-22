@@ -10,7 +10,7 @@
 
 using namespace std;
 
-#define ASSIMP_LOAD_FLAGS (aiProcess_Triangulate | aiProcess_GenSmoothNormals | aiProcess_JoinIdenticalVertices | aiProcess_PreTransformVertices)
+#define ASSIMP_LOAD_FLAGS (aiProcess_Triangulate | aiProcess_GenSmoothNormals | aiProcess_JoinIdenticalVertices)
 #define MAX_NUM_BONES_PER_VERTEX 4
 
 #define COLOR_TEXTURE_UNIT_INDEX_0 0 
@@ -38,11 +38,16 @@ public:
 	void loadColors(const string& dir, const aiMaterial* pMaterial, int index);
 	bool initFromScene(const aiScene* pScene, const string& filename);
 	void countVerticesAndIndices(const aiScene* pScene, unsigned int& numVertices, unsigned int& numIndices);
-	void loadMesh(const char* filename);
+	void loadMesh(const string& filename);
 	void initMaterials(const aiScene* pScene, const string& filename);
 	void populateBuffers();
 	void render();
 	const Material& getMaterial();
+
+	unsigned int getNumBones() const
+	{
+		return (unsigned int)m_boneNameToIndexMap.size();
+	}
 
 private:
 

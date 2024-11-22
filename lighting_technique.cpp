@@ -32,6 +32,8 @@ bool LightingTechnique::init()
 	dirLightLoc.direction = getUnifromLocation("gDirectionalLight.direction");
 	dirLightLoc.diffuseIntensity = getUnifromLocation("gDirectionalLight.diffuseIntensity");
 
+	displayBoneIndex = getUnifromLocation("gDisplayBoneIndex");
+
 	cameraLocalPosLoc = getUnifromLocation("gCameraLocalPos");
 
 	return true;
@@ -74,4 +76,10 @@ void LightingTechnique::setMaterial(const Material& material)
 	glUniform3f(materialLoc.ambientColor, material.ambientColor.x, material.ambientColor.y, material.ambientColor.z);
 	glUniform3f(materialLoc.diffuseColor, material.diffuseColor.x, material.diffuseColor.y, material.diffuseColor.z);
 	glUniform3f(materialLoc.specularColor, material.specularColor.x, material.specularColor.y, material.specularColor.z);
+}
+
+void LightingTechnique::setDisplayBoneIndex(int boneIndex)
+{
+	glUniform1i(displayBoneIndex, boneIndex);
+
 }

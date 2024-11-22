@@ -41,6 +41,7 @@ void SkinnedMesh::loadMeshBones(int meshIndex,const aiMesh* pMesh)
 	{
 		loadSingleBone(meshIndex, pMesh->mBones[i]);
 	}
+
 }
 
 void SkinnedMesh::loadTextures(const string& dir, const aiMaterial* pMaterial, int index)
@@ -189,7 +190,7 @@ bool SkinnedMesh::initFromScene(const aiScene* pScene, const string& filename)
 	return true;
 }
 
-void SkinnedMesh::loadMesh(const char* filename)
+void SkinnedMesh::loadMesh(const string& filename)
 {
 
 	glGenVertexArrays(1, &m_VAO);
@@ -200,7 +201,7 @@ void SkinnedMesh::loadMesh(const char* filename)
 	bool ret = false;
 	Assimp::Importer importer;
 
-	const aiScene* pScene = importer.ReadFile(filename, ASSIMP_LOAD_FLAGS);
+	const aiScene* pScene = importer.ReadFile(filename.c_str(), ASSIMP_LOAD_FLAGS);
 	if (pScene)
 	{
 		ret = initFromScene(pScene, filename);
@@ -255,7 +256,7 @@ void SkinnedMesh::initSingleMesh(int meshIndex, const aiMesh* paiMesh)
 		m_normals.push_back(Vector3f(pNormal.x, pNormal.y, pNormal.z));
 		m_texCoords.push_back(Vector2f(pTexCoord.x, pTexCoord.y));
 	}
-
+	
 	loadMeshBones(meshIndex, paiMesh);
 
 	for (unsigned int i = 0; i < paiMesh->mNumFaces; i++)

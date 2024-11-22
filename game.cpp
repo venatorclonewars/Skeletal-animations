@@ -69,6 +69,7 @@ Game::Game()
 
     pLightingTech->setTextureUnit(COLOR_TEXTURE_UNIT_INDEX_0);
     pLightingTech->setSpecularExpTextureUnit(SPECULAR_EXPONENT_UNIT_INDEX_0);
+    
 
     glEnable(GL_CULL_FACE);
     glFrontFace(GL_CW);
@@ -80,7 +81,7 @@ Game::Game()
     dirLight.diffuseIntensity = 1.0f;
     dirLight.worldDirection = Vector3f(10.0f, 0.0f, 50.0f);
 
-    
+    camera.setWeightColorDebug(pSkinnedMesh, pLightingTech);
 }
 
 void Game::run()
@@ -125,12 +126,18 @@ void Game::renderScene()
     view.inverse();
   
     world = pMesh->getWorldTransform();
-    world.setScale(Vector3f(5.0f, 5.0f, 5.0f));
+    //world.setScale(Vector3f(5.0f, 5.0f, 5.0f));
+    temp.setIdentity();
+    temp.setRotationX(4.71239f);
+    world *= temp;
+    temp.setIdentity();
+    temp.setRotationZ(3.141f);
+    world *= temp;
 
     Matrix4f WVP = projection * view * world;
     pLightingTech->setWVP(WVP);
     pLightingTech->setDirectionalLight(dirLight);
-
+    
    
 
     //pLightingTech->setMaterial(pMesh->getMaterial());
@@ -159,7 +166,7 @@ void Game::renderScene()
         if (i == 0)
         {
             pLightingTech->setMaterial(pMesh->getMaterial());
-            pMesh->render();
+            //pMesh->render();
         }
             
         else

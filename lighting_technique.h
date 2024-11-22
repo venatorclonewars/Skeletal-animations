@@ -53,12 +53,14 @@ public:
 	void setDirectionalLight(const DirectionalLight& light);
 	void setCameraLocalPos(const Vector3f& cameraLocalPos);
 	void setMaterial(const Material& material);
+	void setDisplayBoneIndex(int boneIndex);
 
 private:
 	GLuint WVPLoc;
 	GLuint samplerLoc;
 	GLuint samplerSpecularExpLoc;
 	GLuint cameraLocalPosLoc;
+	GLuint displayBoneIndex;
 
 	struct 
 	{
