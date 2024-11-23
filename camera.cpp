@@ -56,7 +56,6 @@ void Camera::onKeyboard(unsigned char key)
         m_displayBoneIndex++;
         m_displayBoneIndex = m_displayBoneIndex % m_pSkinnedMesh->getNumBones();
         m_pLightingTech->setDisplayBoneIndex(m_displayBoneIndex);
-        printf("num bones %d     ", m_displayBoneIndex);
         break;
     }
 }

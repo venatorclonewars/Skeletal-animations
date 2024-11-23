@@ -23,6 +23,12 @@ void SkinnedMesh::loadSingleBone(int meshIndex, const aiBone* pBone)
 
 	int boneID = getBoneID(pBone);
 
+	if (boneID == m_boneInfo.size())
+	{
+		BoneInfo bi(pBone->mOffsetMatrix);
+		m_boneInfo.push_back(bi);
+	}
+
 	for (int i = 0; i < pBone->mNumWeights; i++)
 	{
 		const aiVertexWeight& vw = pBone->mWeights[i];
@@ -199,9 +205,8 @@ void SkinnedMesh::loadMesh(const string& filename)
 	glGenBuffers(ARRAY_SIZE_IN_ELEMENTS(m_Buffers), m_Buffers);
 
 	bool ret = false;
-	Assimp::Importer importer;
 
-	const aiScene* pScene = importer.ReadFile(filename.c_str(), ASSIMP_LOAD_FLAGS);
+	pScene = importer.ReadFile(filename.c_str(), ASSIMP_LOAD_FLAGS);
 	if (pScene)
 	{
 		ret = initFromScene(pScene, filename);
@@ -368,4 +373,45 @@ const Material& SkinnedMesh::getMaterial()
 	}
 
 	return m_materials[0];
+}
+
+void SkinnedMesh::getBoneTransforms(vector<Matrix4f>& transforms)
+{
+	transforms.resize(m_boneInfo.size());
+
+	Matrix4f identity;
+	identity.setIdentity();
+	printf("Size: %z\n", m_boneInfo.size());
+	readNodeHiearchy(pScene->mRootNode, identity);
+	
+	for (unsigned int i = 0; i < m_boneInfo.size(); i++)
+	{
+		transforms[i] = m_boneInfo[i].finalTransform;
+	}
+}
+
+void SkinnedMesh::readNodeHiearchy(const aiNode* pNode, Matrix4f& parentTransform)
+{
+	string nodeName(pNode->mName.data);
+	Matrix4f nodeTransformation(pNode->mTransformation);
+
+	if (!nodeName.empty()) {
+		printf("Node name: %s\n", nodeName.c_str());
+	}
+	else {
+		printf("Node name is empty or invalid\n");
+	}
+
+	Matrix4f globalTransofrmation = parentTransform * nodeTransformation;
+
+	if (m_boneNameToIndexMap.find(nodeName) != m_boneNameToIndexMap.end())
+	{
+		unsigned int boneIndex = m_boneNameToIndexMap[nodeName];
+		m_boneInfo[boneIndex].finalTransform = globalTransofrmation * m_boneInfo[boneIndex].offsetMatrix;
+	}
+
+	for (unsigned int i = 0; i < pNode->mNumChildren; i++)
+	{
+		readNodeHiearchy(pNode->mChildren[i], globalTransofrmation);
+	}
 }

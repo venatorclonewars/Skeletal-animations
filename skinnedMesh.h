@@ -7,6 +7,7 @@
 #include <map>
 #include "prerequisites.h"
 #include "material.h"
+#include "math.h"
 
 using namespace std;
 
@@ -43,6 +44,9 @@ public:
 	void populateBuffers();
 	void render();
 	const Material& getMaterial();
+
+	void getBoneTransforms(vector<Matrix4f>& transforms);
+	void readNodeHiearchy(const aiNode* pNode, Matrix4f& parentTransform);
 
 	unsigned int getNumBones() const
 	{
@@ -85,6 +89,22 @@ private:
 		unsigned int materialIndex;
 	};
 
+	Assimp::Importer importer;
+	const aiScene* pScene = NULL;
+
+	struct BoneInfo
+	{
+		Matrix4f offsetMatrix;
+		Matrix4f finalTransform;
+
+		BoneInfo(const Matrix4f& offset)
+		{
+			offsetMatrix = offset;
+			finalTransform.setZero();
+		}
+	};
+
+	vector<BoneInfo> m_boneInfo;
 	GLuint m_VAO = -1;
 	GLuint m_Buffers[NUM_BUFFERS] = { 0 };
 

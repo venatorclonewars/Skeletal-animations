@@ -54,6 +54,9 @@ Game::Game()
 
     pSkinnedMesh->loadMesh("Models/Doom/boblampclean.md5mesh");
 
+    vector<Matrix4f> transforms;
+    pSkinnedMesh->getBoneTransforms(transforms);
+
     //Models/Chess/chess_set_1k.fbx
     if (!pMesh->loadMesh("Models/Vase/antique_ceramic_vase_01_1k.fbx"))
         exit(1);
