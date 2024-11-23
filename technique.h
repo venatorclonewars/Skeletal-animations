@@ -19,7 +19,7 @@ protected:
 
 	bool finalize();
 
-	GLint getUnifromLocation(const char* pUniformName);
+	GLint getUniformLocation(const char* pUniformName);
 
 	GLint m_shaderProgram;
 

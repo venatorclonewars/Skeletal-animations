@@ -1,5 +1,6 @@
 #include "lighting_technique.h"
 #include "material.h"
+#include "prerequisites.h"
 
 LightingTechnique::LightingTechnique()
 {
@@ -19,22 +20,30 @@ bool LightingTechnique::init()
 	if (!finalize())
 		return false;
 
-	WVPLoc = getUnifromLocation("gWVP");
-	samplerLoc = getUnifromLocation("gSampler");
-	samplerSpecularExpLoc = getUnifromLocation("gSamplerSpecularExp");
+	WVPLoc = getUniformLocation("gWVP");
+	samplerLoc = getUniformLocation("gSampler");
+	samplerSpecularExpLoc = getUniformLocation("gSamplerSpecularExp");
 
-	materialLoc.ambientColor = getUnifromLocation("gMaterial.ambientColor");
-	materialLoc.diffuseColor = getUnifromLocation("gMaterial.diffuseColor");
-	materialLoc.specularColor = getUnifromLocation("gMaterial.specularColor");
+	materialLoc.ambientColor = getUniformLocation("gMaterial.ambientColor");
+	materialLoc.diffuseColor = getUniformLocation("gMaterial.diffuseColor");
+	materialLoc.specularColor = getUniformLocation("gMaterial.specularColor");
 
-	dirLightLoc.color = getUnifromLocation("gDirectionalLight.color");
-	dirLightLoc.ambientIntensity = getUnifromLocation("gDirectionalLight.ambientIntensity");
-	dirLightLoc.direction = getUnifromLocation("gDirectionalLight.direction");
-	dirLightLoc.diffuseIntensity = getUnifromLocation("gDirectionalLight.diffuseIntensity");
+	dirLightLoc.color = getUniformLocation("gDirectionalLight.color");
+	dirLightLoc.ambientIntensity = getUniformLocation("gDirectionalLight.ambientIntensity");
+	dirLightLoc.direction = getUniformLocation("gDirectionalLight.direction");
+	dirLightLoc.diffuseIntensity = getUniformLocation("gDirectionalLight.diffuseIntensity");
 
-	displayBoneIndex = getUnifromLocation("gDisplayBoneIndex");
+	displayBoneIndex = getUniformLocation("gDisplayBoneIndex");
 
-	cameraLocalPosLoc = getUnifromLocation("gCameraLocalPos");
+	cameraLocalPosLoc = getUniformLocation("gCameraLocalPos");
+
+	for (unsigned int i = 0; i < ARRAY_SIZE_IN_ELEMENTS(m_boneLocation); i++) 
+	{
+		char name[128];
+		memset(name, 0, sizeof(name));
+		snprintf(name, sizeof(name), "gBones[%d]", i);
+		m_boneLocation[i] = getUniformLocation(name);
+	}
 
 	return true;
 }
@@ -82,4 +91,14 @@ void LightingTechnique::setDisplayBoneIndex(int boneIndex)
 {
 	glUniform1i(displayBoneIndex, boneIndex);
 
+}
+
+void LightingTechnique::setBoneTransform(int index, const Matrix4f& transform)
+{
+	//assert(Index < MAX_BONES);
+	if (index >= MAX_BONES) {
+		return;
+	}
+
+	glUniformMatrix4fv(m_boneLocation[index], 1, GL_TRUE, &transform.mat[0][0]);
 }

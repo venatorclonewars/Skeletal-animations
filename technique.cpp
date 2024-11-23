@@ -98,7 +98,7 @@ bool Technique::finalize()
     return true;
 }
 
-GLint Technique::getUnifromLocation(const char* pUniformName)
+GLint Technique::getUniformLocation(const char* pUniformName)
 {
     GLint location = glGetUniformLocation(m_shaderProgram, pUniformName);
 

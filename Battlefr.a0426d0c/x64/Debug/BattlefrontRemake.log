@@ -1,29 +1,20 @@
-﻿  skinnedMesh.cpp
+﻿  lighting_technique.cpp
 C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\math.h(273,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-  (compiling source file 'skinnedMesh.cpp')
+  (compiling source file 'lighting_technique.cpp')
   
 C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\math.h(287,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-  (compiling source file 'skinnedMesh.cpp')
+  (compiling source file 'lighting_technique.cpp')
   
 C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\math.h(394,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-  (compiling source file 'skinnedMesh.cpp')
+  (compiling source file 'lighting_technique.cpp')
   
 C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\math.h(395,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-  (compiling source file 'skinnedMesh.cpp')
+  (compiling source file 'lighting_technique.cpp')
   
 C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\math.h(396,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-  (compiling source file 'skinnedMesh.cpp')
+  (compiling source file 'lighting_technique.cpp')
   
 C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\math.h(397,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-  (compiling source file 'skinnedMesh.cpp')
-  
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\skinnedMesh.cpp(12,37): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\skinnedMesh.cpp(32,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\skinnedMesh.cpp(46,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\skinnedMesh.cpp(215,10): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'const std::string'
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\skinnedMesh.cpp(384,9): warning C4778: 'printf' : unterminated format string '%z\n'
-C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\skinnedMesh.cpp(384,38): warning C4474: 'printf' : too many arguments passed for format string
-      C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\skinnedMesh.cpp(384,38):
-      placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+  (compiling source file 'lighting_technique.cpp')
   
   BattlefrontRemake.vcxproj -> C:\Users\simon\OneDrive\Documents\GitHubLocal\GameEngine\Skeletal-animations\x64\Debug\BattlefrontRemake.exe

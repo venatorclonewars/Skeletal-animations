@@ -3,6 +3,8 @@
 #include "math.h"
 #include "material.h"
 
+#define MAX_BONES 100
+
 class BaseLight
 {
 public:
@@ -54,6 +56,7 @@ public:
 	void setCameraLocalPos(const Vector3f& cameraLocalPos);
 	void setMaterial(const Material& material);
 	void setDisplayBoneIndex(int boneIndex);
+	void setBoneTransform(int index, const Matrix4f& transform);
 
 private:
 	GLuint WVPLoc;
@@ -61,6 +64,7 @@ private:
 	GLuint samplerSpecularExpLoc;
 	GLuint cameraLocalPosLoc;
 	GLuint displayBoneIndex;
+	GLuint m_boneLocation[MAX_BONES];
 
 	struct 
 	{
