@@ -44,6 +44,7 @@ public:
 	void populateBuffers();
 	void render();
 	const Material& getMaterial();
+	Matrix4f& getWorldTransform() { return m_worldTransform; }
 
 	void getBoneTransforms(vector<Matrix4f>& transforms);
 	void getBoneTransforms(float timeInSeconds, vector<Matrix4f>& transforms);

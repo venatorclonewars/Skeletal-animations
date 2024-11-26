@@ -130,14 +130,14 @@ void Game::renderScene()
 
     view.inverse();
   
-    world = pMesh->getWorldTransform();
+    world = pSkinnedMesh->getWorldTransform();
     //world.setScale(Vector3f(5.0f, 5.0f, 5.0f));
-    /*temp.setIdentity();
+    temp.setIdentity();
     temp.setRotationX(4.71239f);
     world *= temp;
     temp.setIdentity();
     temp.setRotationZ(3.141f);
-    world *= temp;*/
+    world *= temp;
 
     Matrix4f WVP = projection * view * world;
     pLightingTech->setWVP(WVP);
@@ -170,18 +170,18 @@ void Game::renderScene()
     {
         if (i == 0)
         {
-            pLightingTech->setMaterial(pMesh->getMaterial());
+            //pLightingTech->setMaterial(pMesh->getMaterial());
             //pMesh->render();
         }
             
         else
         {
-            pLightingTech->setMaterial(pMesh->getMaterial());
+            //pLightingTech->setMaterial(pSkinnedMesh->getMaterial());
             //pSkinnedMesh->render();
         }
         
     }
-    
+    pLightingTech->setMaterial(pMesh->getMaterial());
     long long currentTimeMillis = pTime->getCurrentTimeInMillis();
     float animTimeSec = ((float)currentTimeMillis - pTime->startTimeMilliseconds) / 1000.0f;
 
