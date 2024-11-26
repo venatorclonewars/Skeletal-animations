@@ -191,6 +191,16 @@ public:
 	
 	}
 
+	Matrix4f(const aiMatrix3x3& aiMat)
+	{
+
+		mat[0][0] = aiMat.a1; mat[0][1] = aiMat.a2; mat[0][2] = aiMat.a3; mat[0][3] = 0.0f;
+		mat[1][0] = aiMat.b1; mat[1][1] = aiMat.b2; mat[1][2] = aiMat.b3; mat[1][3] = 0.0f;
+		mat[2][0] = aiMat.c1; mat[2][1] = aiMat.c2; mat[2][2] = aiMat.c3; mat[2][3] = 0.0f;
+		mat[3][0] = 0.0f;	  mat[3][1] = 0.0f;     mat[3][2] = 0.0f;     mat[3][3] = 1.0f;
+		
+	}
+
 	Matrix4f(const Matrix4f& matrix) 
 	{
 		for (int i = 0; i < 4; i++)

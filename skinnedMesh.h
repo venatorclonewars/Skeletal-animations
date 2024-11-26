@@ -46,7 +46,22 @@ public:
 	const Material& getMaterial();
 
 	void getBoneTransforms(vector<Matrix4f>& transforms);
+	void getBoneTransforms(float timeInSeconds, vector<Matrix4f>& transforms);
+	
 	void readNodeHiearchy(const aiNode* pNode, Matrix4f& parentTransform);
+	void readNodeHiearchy(float animationTimeInTicks, const aiNode* pNode, Matrix4f& parentTransform);
+
+	const aiNodeAnim* findNodeAnim(const aiAnimation* pAnimation, const string nodeName);
+
+	void calcInterpolatedScaling(aiVector3D& out, float animationTimeTicks, const aiNodeAnim* pNodeAnim);
+	unsigned int findScaling(float animationTimeTicks, const aiNodeAnim* pNodeAnim);
+
+	void calcInterpolatedRotation(aiQuaternion& out, float animationTimeTicks, const aiNodeAnim* pNodeAnim);
+	unsigned int findRotation(float animationTimeTicks, const aiNodeAnim* pNodeAnim);
+
+	void calcInterpolatedTranslation(aiVector3D& out, float animationTimeTicks, const aiNodeAnim* pNodeAnim);
+	unsigned int findTranslation(float animationTimeTicks, const aiNodeAnim* pNodeAnim);
+
 
 	unsigned int getNumBones() const
 	{
@@ -121,5 +136,6 @@ private:
 	vector<int> m_indices;
 
 	Matrix4f m_worldTransform;
+	Matrix4f m_globalInverseTransform;
 };
 

@@ -114,8 +114,11 @@ void main()
     }
 
 	
-	if (!found)	
 	FragColor = texture(gSampler, fragTexCoord.xy) *
-						clamp((ambientColor + diffuseColor + specularColor), 0, 1)  + vec4(0.0, 0.0, 1.0, 0.0);
+						clamp((ambientColor + diffuseColor + specularColor), 0, 1);
+
+	//if (!found)	
+	//FragColor = texture(gSampler, fragTexCoord.xy) *
+	//					clamp((ambientColor + diffuseColor + specularColor), 0, 1)  + vec4(0.0, 0.0, 1.0, 0.0);
 
 }

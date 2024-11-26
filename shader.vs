@@ -25,7 +25,8 @@ void main()
 	boneTransform += gBones[boneIDs[3]] * weights[3];
 
 	vec4 posL = boneTransform * vec4(vertPos, 1.0);
-	gl_Position = gWVP * vec4(vertPos, 1.0);
+	gl_Position = gWVP * posL;
+	//gl_Position = gWVP * vec4(vertPos, 1.0);
 
 	fragTexCoord = texCoord;
 	fragNormal = normal;

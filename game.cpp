@@ -5,6 +5,7 @@
 #include "texture.h"
 #include "mesh.h"
 #include "skinnedMesh.h"
+#include "time.h"
 #include "lighting_technique.h"
 
 #define WINDOW_WIDTH 1920
@@ -22,6 +23,7 @@ BaseLight baseLight;
 DirectionalLight dirLight;
 
 Camera camera;
+Time* pTime = new Time();
 
 const char* pVSFileName = "shader.vs";
 const char* pFSFileName = "shader.fs";
@@ -54,8 +56,8 @@ Game::Game()
 
     pSkinnedMesh->loadMesh("Models/Doom/boblampclean.md5mesh");
 
-    vector<Matrix4f> transforms;
-    pSkinnedMesh->getBoneTransforms(transforms);
+    /*vector<Matrix4f> transforms;
+    pSkinnedMesh->getBoneTransforms(transforms);*/
 
     //Models/Chess/chess_set_1k.fbx
     if (!pMesh->loadMesh("Models/Vase/antique_ceramic_vase_01_1k.fbx"))
@@ -130,12 +132,12 @@ void Game::renderScene()
   
     world = pMesh->getWorldTransform();
     //world.setScale(Vector3f(5.0f, 5.0f, 5.0f));
-    temp.setIdentity();
+    /*temp.setIdentity();
     temp.setRotationX(4.71239f);
     world *= temp;
     temp.setIdentity();
     temp.setRotationZ(3.141f);
-    world *= temp;
+    world *= temp;*/
 
     Matrix4f WVP = projection * view * world;
     pLightingTech->setWVP(WVP);
@@ -175,12 +177,23 @@ void Game::renderScene()
         else
         {
             pLightingTech->setMaterial(pMesh->getMaterial());
-            pSkinnedMesh->render();
+            //pSkinnedMesh->render();
         }
         
     }
     
+    long long currentTimeMillis = pTime->getCurrentTimeInMillis();
+    float animTimeSec = ((float)currentTimeMillis - pTime->startTimeMilliseconds) / 1000.0f;
+
+    vector<Matrix4f> transforms;
+    pSkinnedMesh->getBoneTransforms(animTimeSec, transforms);
+
+    for (unsigned int i = 0; i < transforms.size(); i++)
+    {
+        pLightingTech->setBoneTransform(i, transforms[i]);
+    }
     
+    pSkinnedMesh->render();
     glutSwapBuffers();
 
 }
